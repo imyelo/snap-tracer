@@ -1,0 +1,15 @@
+{
+  "name": "snap-tracer",
+  "version": "0.0.1",
+  "dependencies": {
+    "commander": "^2.2.0",
+    "debug": "^0.8.0",
+    "eventproxy": "^0.3.1",
+    "lodash": "^2.4.1",
+    "mkdirp": "^0.3.5",
+    "png-diff": "^0.3.0",
+    "rimraf": "^2.2.6",
+    "stepbystep": "0.0.1",
+    "wd": "^0.2.18"
+  }
+}

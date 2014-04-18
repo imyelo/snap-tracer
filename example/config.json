@@ -1,0 +1,15 @@
+{
+  "options": {
+    "browsers": ["chrome", "firefox", "ie"]
+  },
+  "tasks": [
+    {
+      "url": "http://ym.163.com/",
+      "name": "163"
+    },
+    {
+      "url": "https://exmail.qq.com/login",
+      "name": "qq"
+    }
+  ]
+}

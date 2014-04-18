@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var path = require('path');
+var snapTracer = require('../');
+var fs = require('fs');
+var config = {};
+
+program
+    .option('-c --config [file]', 'select config file', './config.json')
+    .option('-s --save', 'save current snaps as references')
+    .option('-d --diff', 'just check the difference')
+    .parse(process.argv);
+
+if (fs.existsSync(program.config)) {
+  config = fs.readFileSync(program.config).toString();
+}
+snapTracer.config(fs.readFileSync(config));
+if (program.diff) {
+  snapTracer.diff();
+} else if (program.save) {
+  snapTracer.save();
+} else {
+  snapTracer.snap();
+}
