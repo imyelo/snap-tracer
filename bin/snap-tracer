@@ -10,13 +10,18 @@ program
     .option('-c --config [file]', 'select config file', './config.json')
     .option('-s --save', 'save current snaps as references')
     .option('-d --diff', 'just check the difference')
+    .option('-o --output [dir]', 'target directory', '.')
     .option('--clean', 'clean the snaps directory')
     .parse(process.argv);
 
 if (fs.existsSync(program.config)) {
   config = JSON.parse(fs.readFileSync(program.config).toString());
 }
+
 snapTracer.config(config);
+
+snapTracer.setOutputPath(program.output);
+
 if (program.clean) {
   snapTracer.clean();
 } else if (program.diff) {
