@@ -12,6 +12,7 @@
     -c --config [file]  select config file
     -s --save           save current snaps as references
     -d --diff           just check the difference
+    --clean             clean the snaps directory
 
 ## config.json
 ```
