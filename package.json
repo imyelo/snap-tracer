@@ -1,6 +1,6 @@
 {
   "name": "snap-tracer",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "yelo",
   "dependencies": {
     "commander": "^2.2.0",
