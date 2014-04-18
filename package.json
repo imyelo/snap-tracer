@@ -1,6 +1,7 @@
 {
   "name": "snap-tracer",
-  "version": "0.0.1",
+  "version": "0.1.1",
+  "author": "yelo",
   "dependencies": {
     "commander": "^2.2.0",
     "debug": "^0.8.0",
@@ -11,5 +12,22 @@
     "rimraf": "^2.2.6",
     "stepbystep": "0.0.1",
     "wd": "^0.2.18"
-  }
+  },
+  "bin": {
+    "snap-tracer": "./bin/snap-tracer"
+  },
+  "keywords": [
+    "snap",
+    "screenshot",
+    "shot",
+    "snapshot",
+    "webshot",
+    "trace",
+    "tracer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imyelo/snap-tracer.git"
+  },
+  "license": "MIT"
 }

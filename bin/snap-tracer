@@ -13,9 +13,9 @@ program
     .parse(process.argv);
 
 if (fs.existsSync(program.config)) {
-  config = fs.readFileSync(program.config).toString();
+  config = JSON.parse(fs.readFileSync(program.config).toString());
 }
-snapTracer.config(fs.readFileSync(config));
+snapTracer.config(config);
 if (program.diff) {
   snapTracer.diff();
 } else if (program.save) {

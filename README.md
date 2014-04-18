@@ -34,9 +34,10 @@
 
 ## directory
 ```
-    - reference
-    - current
-    - diff
+    + snaps
+        + reference
+        + current
+        + diff
     - config.json
 ```
 
